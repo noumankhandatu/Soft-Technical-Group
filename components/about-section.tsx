@@ -1,6 +1,16 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { useEffect } from "react";
 import { Building2, Users, Wrench, Globe } from "lucide-react";
 
 export default function AboutSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (optional)
+      once: true, // Whether animation should happen only once (optional)
+    });
+  }, []);
   const features = [
     {
       icon: Building2,
@@ -25,7 +35,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section data-aos="fade-right" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Centered Title */}
         <div className="text-center mb-16 scroll-animate">

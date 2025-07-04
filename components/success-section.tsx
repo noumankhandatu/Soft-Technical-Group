@@ -1,41 +1,17 @@
-import { Users, Lightbulb, MessageCircle, Award, Shield, Zap } from "lucide-react";
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { useEffect } from "react";
 
 export default function SuccessSection() {
-  const successFactors = [
-    {
-      icon: Users,
-      title: "Expert Talent",
-      description: "Skilled team with deep technical expertise",
-    },
-    {
-      icon: Lightbulb,
-      title: "Innovative Thinking",
-      description: "Creative solutions for complex challenges",
-    },
-    {
-      icon: MessageCircle,
-      title: "Transparent Communication",
-      description: "Clear and honest client interactions",
-    },
-    {
-      icon: Award,
-      title: "Quality Solutions",
-      description: "Reliable, high-quality IT implementations",
-    },
-    {
-      icon: Shield,
-      title: "Ethical Practices",
-      description: "Guided by integrity and professionalism",
-    },
-    {
-      icon: Zap,
-      title: "Modern Technology",
-      description: "Focus on cutting-edge solutions",
-    },
-  ];
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (optional)
+      once: true, // Whether animation should happen only once (optional)
+    });
+  }, []);
   return (
-    <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
+    <section data-aos="fade-right" className="py-16 bg-gradient-to-br from-orange-50 to-white">
       <div className="container mx-auto px-4">
         {/* Centered Title */}
         <div className="text-center mb-16">

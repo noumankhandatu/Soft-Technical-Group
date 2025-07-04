@@ -1,6 +1,16 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+import { useEffect } from "react";
 import { Shield, Users, Wrench, Heart } from "lucide-react";
 
 export default function MissionSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (optional)
+      once: true, // Whether animation should happen only once (optional)
+    });
+  }, []);
   const missionPoints = [
     {
       icon: Shield,
@@ -25,7 +35,7 @@ export default function MissionSection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section data-aos="fade-down" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Centered Title */}
         <div className="text-center mb-16">

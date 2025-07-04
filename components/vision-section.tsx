@@ -1,6 +1,17 @@
-import { Target, Users, TrendingUp, Award } from "lucide-react";
+"use client";
 
+import { Target, Users, TrendingUp, Award } from "lucide-react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 export default function VisionSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (optional)
+      once: true, // Whether animation should happen only once (optional)
+    });
+  }, []);
+
   const visionPoints = [
     {
       icon: Target,
@@ -25,7 +36,7 @@ export default function VisionSection() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
+    <section data-aos="fade-right" className="py-16 bg-gradient-to-br from-orange-50 to-white">
       <div className="container mx-auto px-4">
         {/* Centered Title */}
         <div className="text-center mb-16">
