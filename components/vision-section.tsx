@@ -1,4 +1,4 @@
-import { Target, Users, TrendingUp, Award } from "lucide-react"
+import { Target, Users, TrendingUp, Award } from "lucide-react";
 
 export default function VisionSection() {
   const visionPoints = [
@@ -22,7 +22,7 @@ export default function VisionSection() {
       title: "Superior Performance",
       description: "Delivering exceptional results that speak for themselves",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -39,7 +39,7 @@ export default function VisionSection() {
           <div className="animate-fade-in-left">
             <div className="relative">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="https://stg.com.pk/wp-content/uploads/slider/cache/b73a73b7e0500ae489d4db7f86d14cf9/8.jpg"
                 alt="STG Vision - Future Technology"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
@@ -49,9 +49,7 @@ export default function VisionSection() {
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-white/95 backdrop-blur-sm p-6 rounded-lg animate-fade-in-up animation-delay-600">
                   <div className="text-stg-orange text-4xl mb-2">"</div>
-                  <p className="text-gray-700 font-medium italic">
-                    Excellence is not a destination; it is a continuous journey that never ends.
-                  </p>
+                  <p className="text-gray-700 font-medium italic">Excellence is not a destination; it is a continuous journey that never ends.</p>
                 </div>
               </div>
             </div>
@@ -61,9 +59,8 @@ export default function VisionSection() {
           <div className="space-y-8 animate-fade-in-right">
             <div className="prose prose-lg">
               <p className="text-xl leading-relaxed text-gray-700 mb-8">
-                To create a <strong className="text-stg-orange">service-based company</strong> whose goal is to exceed
-                customer's expectations. To increase the number of customers serviced through{" "}
-                <strong className="text-stg-orange">superior performance</strong> and{" "}
+                To create a <strong className="text-stg-orange">service-based company</strong> whose goal is to exceed customer's expectations. To
+                increase the number of customers serviced through <strong className="text-stg-orange">superior performance</strong> and{" "}
                 <strong className="text-stg-orange">word-of-mouth referrals</strong>.
               </p>
             </div>
@@ -81,9 +78,7 @@ export default function VisionSection() {
                       <point.icon className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2 group-hover:text-stg-orange transition-colors duration-300">
-                        {point.title}
-                      </h3>
+                      <h3 className="font-semibold text-gray-800 mb-2 group-hover:text-stg-orange transition-colors duration-300">{point.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed">{point.description}</p>
                     </div>
                   </div>
@@ -95,9 +90,7 @@ export default function VisionSection() {
             <div className="mt-8 animate-fade-in-up animation-delay-800">
               <div className="bg-stg-orange p-6 rounded-lg text-white">
                 <h3 className="text-xl font-semibold mb-2">Ready to Experience Excellence?</h3>
-                <p className="mb-4 opacity-90">
-                  Join hundreds of satisfied customers who trust STG for their IT solutions.
-                </p>
+                <p className="mb-4 opacity-90">Join hundreds of satisfied customers who trust STG for their IT solutions.</p>
                 <button className="bg-white text-stg-orange px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
                   Get Started Today
                 </button>
@@ -135,5 +128,5 @@ export default function VisionSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

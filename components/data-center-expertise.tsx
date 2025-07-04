@@ -1,12 +1,11 @@
-import { Award, Users, Zap, Shield } from "lucide-react"
+import { Award, Users, Zap, Shield } from "lucide-react";
 
 export default function DataCenterExpertise() {
   const expertise = [
     {
       icon: Award,
       title: "Regional Leadership",
-      description:
-        "The only service-based company in the region focusing on automation systems and standard data centers",
+      description: "The only service-based company in the region focusing on automation systems and standard data centers",
     },
     {
       icon: Users,
@@ -23,7 +22,7 @@ export default function DataCenterExpertise() {
       title: "Complete Security",
       description: "Comprehensive security systems including fire protection and access control",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -35,17 +34,11 @@ export default function DataCenterExpertise() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {expertise.map((item, index) => (
-            <div
-              key={index}
-              className="text-center group animate-fade-in-up"
-              style={{ animationDelay: `${index * 200}ms` }}
-            >
+            <div key={index} className="text-center group animate-fade-in-up" style={{ animationDelay: `${index * 200}ms` }}>
               <div className="w-20 h-20 bg-stg-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <item.icon className="h-10 w-10 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-stg-orange transition-colors duration-300">
-                {item.title}
-              </h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-stg-orange transition-colors duration-300">{item.title}</h3>
               <p className="text-gray-600 leading-relaxed">{item.description}</p>
             </div>
           ))}
@@ -55,8 +48,8 @@ export default function DataCenterExpertise() {
         <div className="bg-gradient-to-r from-stg-orange to-orange-600 rounded-2xl p-12 text-center text-white animate-fade-in-up animation-delay-800">
           <h3 className="text-3xl font-bold mb-4">Ready to Build Your Data Center?</h3>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Let our expert team design and implement a world-class data center solution tailored to your specific needs.
-            From planning to maintenance, we've got you covered.
+            Let our expert team design and implement a world-class data center solution tailored to your specific needs. From planning to maintenance,
+            we've got you covered.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-stg-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
@@ -67,34 +60,7 @@ export default function DataCenterExpertise() {
             </button>
           </div>
         </div>
-
-        {/* Service Guarantee */}
-        <div className="mt-16 bg-white p-12 rounded-2xl shadow-lg animate-fade-in-up animation-delay-1000">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl font-bold text-gray-800 mb-6">Our Service Guarantee</h3>
-            <div className="grid md:grid-cols-3 gap-8 text-left">
-              <div>
-                <h4 className="text-xl font-semibold text-stg-orange mb-4">Quality Assurance</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  Brand-name products and professional technical support ensuring reliable performance and longevity.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-xl font-semibold text-stg-orange mb-4">Ethical Practices</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  Sound, ethical business practices that benefit our clients, employees, and stakeholders.
-                </p>
-              </div>
-              <div>
-                <h4 className="text-xl font-semibold text-stg-orange mb-4">Unparalleled Service</h4>
-                <p className="text-gray-600 leading-relaxed">
-                  Customer service excellence through the application of proven principles and methodologies.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-  )
+  );
 }

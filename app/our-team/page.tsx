@@ -1,10 +1,10 @@
-import type { Metadata } from "next"
-import Header from "../header"
-import TeamHero from "../../components/team-hero"
-import TeamIntro from "../../components/team-intro"
-import CEOStory from "../../components/ceo-story"
-import TeamMembers from "../../components/team-members"
-import TeamValues from "../../components/team-values"
+import type { Metadata } from "next";
+import Header from "../header";
+import TeamHero from "../../components/team-hero";
+import TeamIntro from "../../components/team-intro";
+import CEOStory from "../../components/ceo-story";
+import TeamMembers from "../../components/team-members";
+import TeamValues from "../../components/team-values";
 
 export const metadata: Metadata = {
   title: "Our Team Pakistan | STG - Expert IT Professionals & Engineers Gilgit-Baltistan",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://stg.com.pk/our-team",
   },
-}
+};
 
 export default function OurTeamPage() {
   return (
@@ -69,8 +69,7 @@ export default function OurTeamPage() {
                 "@type": "Person",
                 name: "Shahab Anjum",
                 jobTitle: "Manager Finance",
-                description:
-                  "Managing financial operations and ensuring sound fiscal management across all STG projects",
+                description: "Managing financial operations and ensuring sound fiscal management across all STG projects",
                 worksFor: {
                   "@type": "Organization",
                   "@id": "https://stg.com.pk/#organization",
@@ -102,5 +101,5 @@ export default function OurTeamPage() {
         </main>
       </div>
     </>
-  )
+  );
 }

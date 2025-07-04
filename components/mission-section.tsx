@@ -1,4 +1,4 @@
-import { Shield, Users, Wrench, Heart } from "lucide-react"
+import { Shield, Users, Wrench, Heart } from "lucide-react";
 
 export default function MissionSection() {
   const missionPoints = [
@@ -22,7 +22,7 @@ export default function MissionSection() {
       title: "Community Focus",
       description: "Providing the Area with comprehensive IT solutions",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-white">
@@ -39,11 +39,9 @@ export default function MissionSection() {
           <div className="space-y-8 animate-fade-in-left">
             <div className="prose prose-lg">
               <p className="text-xl leading-relaxed text-gray-700 mb-8">
-                To provide the Area with <strong className="text-stg-orange">quality brand-name products</strong>,
-                computer & network solutions,{" "}
+                To provide the Area with <strong className="text-stg-orange">quality brand-name products</strong>, computer & network solutions,{" "}
                 <strong className="text-stg-orange">reliable and professional technical support</strong>, and{" "}
-                <strong className="text-stg-orange">unparalleled customer service</strong> through the application of
-                the principles.
+                <strong className="text-stg-orange">unparalleled customer service</strong> through the application of the principles.
               </p>
             </div>
 
@@ -60,9 +58,7 @@ export default function MissionSection() {
                       <point.icon className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2 group-hover:text-stg-orange transition-colors duration-300">
-                        {point.title}
-                      </h3>
+                      <h3 className="font-semibold text-gray-800 mb-2 group-hover:text-stg-orange transition-colors duration-300">{point.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed">{point.description}</p>
                     </div>
                   </div>
@@ -75,7 +71,7 @@ export default function MissionSection() {
           <div className="animate-fade-in-right">
             <div className="relative">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="https://stg.com.pk/wp-content/uploads/slider/cache/fe8adccc4f49d50483fad7d32efba9a4/3.jpg"
                 alt="STG Mission - Quality Service"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
@@ -85,9 +81,7 @@ export default function MissionSection() {
               <div className="absolute top-6 left-6 right-6">
                 <div className="bg-white/95 backdrop-blur-sm p-6 rounded-lg animate-fade-in-up animation-delay-600">
                   <h3 className="text-stg-orange font-bold text-lg mb-2">Our Commitment</h3>
-                  <p className="text-gray-700 text-sm">
-                    Delivering excellence through quality, reliability, and unmatched customer service.
-                  </p>
+                  <p className="text-gray-700 text-sm">Delivering excellence through quality, reliability, and unmatched customer service.</p>
                 </div>
               </div>
             </div>
@@ -95,5 +89,5 @@ export default function MissionSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

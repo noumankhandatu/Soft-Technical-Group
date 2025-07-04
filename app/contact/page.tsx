@@ -1,9 +1,9 @@
-import type { Metadata } from "next"
-import Header from "../header"
-import ContactHero from "../../components/contact-hero"
-import ContactInfo from "../../components/contact-info"
-import ContactForm from "../../components/contact-form"
-import ContactMap from "../../components/contact-map"
+import type { Metadata } from "next";
+import Header from "../header";
+import ContactHero from "../../components/contact-hero";
+import ContactInfo from "../../components/contact-info";
+import ContactForm from "../../components/contact-form";
+import ContactMap from "../../components/contact-map";
 
 export const metadata: Metadata = {
   title: "Contact STG Pakistan | IT Support Gilgit-Baltistan | Soft Technical Group Office",
@@ -25,8 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Contact STG Pakistan | IT Support Gilgit-Baltistan",
-    description:
-      "Contact STG (Soft Technical Group) in Gilgit, Pakistan. 24/7 IT support available. Office: GITCO Gas Company, River View Road.",
+    description: "Contact STG (Soft Technical Group) in Gilgit, Pakistan. 24/7 IT support available. Office: GITCO Gas Company, River View Road.",
     url: "https://stg.com.pk/contact",
     images: [
       {
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://stg.com.pk/contact",
   },
-}
+};
 
 export default function ContactPage() {
   return (
@@ -74,5 +73,5 @@ export default function ContactPage() {
         </main>
       </div>
     </>
-  )
+  );
 }

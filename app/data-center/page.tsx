@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
-import Header from "../header"
-import DataCenterHero from "../../components/data-center-hero"
-import DataCenterMission from "../../components/data-center-mission"
-import DataCenterProjectsCarousel from "../../components/data-center-projects-carousel"
-import DataCenterFeatures from "../../components/data-center-features"
-import DataCenterProjects from "../../components/data-center-projects"
-import DataCenterExpertise from "../../components/data-center-expertise"
+import type { Metadata } from "next";
+import Header from "../header";
+import DataCenterHero from "../../components/data-center-hero";
+import DataCenterMission from "../../components/data-center-mission";
+import DataCenterProjectsCarousel from "../../components/data-center-projects-carousel";
+import DataCenterFeatures from "../../components/data-center-features";
+import DataCenterProjects from "../../components/data-center-projects";
+import DataCenterExpertise from "../../components/data-center-expertise";
 
 export const metadata: Metadata = {
   title: "Data Center Pakistan | STG - Tier 3 Data Center Establishment & Management Gilgit-Baltistan",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://stg.com.pk/data-center",
   },
-}
+};
 
 export default function DataCenterPage() {
   return (
@@ -89,10 +89,9 @@ export default function DataCenterPage() {
           <DataCenterMission />
           <DataCenterProjectsCarousel />
           <DataCenterFeatures />
-          <DataCenterProjects />
           <DataCenterExpertise />
         </main>
       </div>
     </>
-  )
+  );
 }

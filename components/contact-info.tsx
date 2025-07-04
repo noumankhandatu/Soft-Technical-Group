@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Building, Users } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Building, Users } from "lucide-react";
 
 export default function ContactInfo() {
   const contactDetails = [
@@ -22,14 +22,14 @@ export default function ContactInfo() {
       title: "Business Hours",
       details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed"],
     },
-  ]
+  ];
 
   const quickStats = [
     { icon: Building, number: "4", label: "Data Centers Built" },
     { icon: Users, number: "500+", label: "Happy Clients" },
     { icon: Clock, number: "24/7", label: "Support Available" },
     { icon: Phone, number: "17+", label: "Years Experience" },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -43,19 +43,13 @@ export default function ContactInfo() {
         </div>
 
         {/* Contact Details Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {contactDetails.map((contact, index) => (
-            <div
-              key={index}
-              className="text-center group animate-fade-in-up"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
+            <div key={index} className="text-center group animate-fade-in-up" style={{ animationDelay: `${index * 150}ms` }}>
               <div className="w-16 h-16 bg-stg-orange rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <contact.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-stg-orange transition-colors duration-300">
-                {contact.title}
-              </h3>
+              <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-stg-orange transition-colors duration-300">{contact.title}</h3>
               <div className="space-y-2">
                 {contact.details.map((detail, detailIndex) => (
                   <p key={detailIndex} className="text-gray-600 text-sm">
@@ -65,16 +59,12 @@ export default function ContactInfo() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Quick Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {quickStats.map((stat, index) => (
-            <div
-              key={index}
-              className="text-center animate-fade-in-up"
-              style={{ animationDelay: `${(index + 4) * 150}ms` }}
-            >
+            <div key={index} className="text-center animate-fade-in-up" style={{ animationDelay: `${(index + 4) * 150}ms` }}>
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-stg-orange rounded-full flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="h-6 w-6 text-white" />
@@ -84,8 +74,8 @@ export default function ContactInfo() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
-  )
+  );
 }

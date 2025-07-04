@@ -1,4 +1,4 @@
-import { Building2, Shield, DollarSign, Leaf, Heart, GraduationCap } from "lucide-react"
+import { Building2, Shield, DollarSign, Leaf, Heart, GraduationCap, Droplets, Building, Zap } from "lucide-react";
 
 export default function MajorClientsGrid() {
   const clients = [
@@ -6,7 +6,7 @@ export default function MajorClientsGrid() {
       id: 1,
       name: "Finance Department",
       subtitle: "Government of Gilgit-Baltistan",
-      description: "Complete data center infrastructure for financial operations and budget management systems",
+      description: "Complete data center infrastructure for financial operations and budget management systems.",
       logo: "/images/clients/finance-department.jpg",
       icon: DollarSign,
       services: ["Data Center Setup", "Server Installation", "Network Infrastructure", "Security Systems"],
@@ -17,7 +17,7 @@ export default function MajorClientsGrid() {
       id: 2,
       name: "Excise & Taxation Department",
       subtitle: "Government of Gilgit-Baltistan",
-      description: "Modern IT infrastructure for tax collection and administration with automated systems",
+      description: "Modern IT infrastructure for tax collection and administration with automated systems.",
       logo: "/images/clients/excise-taxation.jpg",
       icon: Building2,
       services: ["Database Systems", "Automation Tools", "Backup Solutions", "Technical Support"],
@@ -28,7 +28,7 @@ export default function MajorClientsGrid() {
       id: 3,
       name: "Police Department",
       subtitle: "Government of Gilgit-Baltistan",
-      description: "Secure data center for law enforcement operations and criminal record management",
+      description: "Secure data center for law enforcement operations and criminal record management.",
       logo: "/images/clients/police-department.jpg",
       icon: Shield,
       services: ["Security Infrastructure", "Encrypted Storage", "Access Control", "Surveillance Systems"],
@@ -39,7 +39,7 @@ export default function MajorClientsGrid() {
       id: 4,
       name: "Agriculture Department",
       subtitle: "Government of Gilgit-Baltistan",
-      description: "Digital transformation for agricultural data management and farmer support systems",
+      description: "Digital transformation for agricultural data management and farmer support systems.",
       logo: "/images/clients/agriculture-department.jpg",
       icon: Leaf,
       services: ["Data Analytics", "Cloud Integration", "Mobile Solutions", "Training Programs"],
@@ -50,7 +50,7 @@ export default function MajorClientsGrid() {
       id: 5,
       name: "Health Department",
       subtitle: "Government of Gilgit-Baltistan",
-      description: "Healthcare IT infrastructure for patient management and medical record systems",
+      description: "Healthcare IT infrastructure for patient management and medical record systems.",
       logo: "/images/clients/health-department.jpg",
       icon: Heart,
       services: ["Medical Systems", "Patient Records", "Network Setup", "Data Security"],
@@ -61,14 +61,47 @@ export default function MajorClientsGrid() {
       id: 6,
       name: "Karakoram International University",
       subtitle: "Educational Institution",
-      description: "Comprehensive IT solutions for academic and administrative operations",
+      description: "Comprehensive IT solutions for academic and administrative operations.",
       logo: "/images/clients/karakoram-university.jpg",
       icon: GraduationCap,
       services: ["Campus Network", "Student Systems", "Research Infrastructure", "E-Learning Platform"],
       year: "2022",
       status: "Active",
     },
-  ]
+    {
+      id: 7,
+      name: "Water Management Department",
+      subtitle: "Government of Gilgit-Baltistan",
+      description: "Smart IT systems for real-time monitoring of water resources and irrigation optimization.",
+      logo: "/images/clients/finance-department.jpg",
+      icon: Droplets, // from lucide-react
+      services: ["Irrigation Monitoring", "Sensor Integration", "Data Dashboards", "IoT Setup"],
+      year: "2023",
+      status: "Active",
+    },
+    {
+      id: 8,
+      name: "Water & Power Department",
+      subtitle: "Government of Gilgit-Baltistan",
+      description: "Reliable IT infrastructure for efficient management of water and power distribution.",
+      logo: "/images/clients/pwd.jpeg",
+      icon: Zap, // from lucide-react
+      services: ["Power Analytics", "Distribution Monitoring", "Data Infrastructure", "Load Management Systems"],
+      year: "2023",
+      status: "Active",
+    },
+    {
+      id: 9,
+      name: "Apex & Co",
+      subtitle: "Gilgit-Baltistan",
+      description: "Full-stack IT automation and office infrastructure to enhance corporate operations.",
+      logo: "/images/clients/apex_co_private_limited_logo.jpeg",
+      icon: Building, // from lucide-react
+      services: ["Office IT Setup", "Automation Tools", "Custom ERP", "Cloud Storage"],
+      year: "2024",
+      status: "Active",
+    },
+  ];
 
   return (
     <section className="py-16 bg-white">
@@ -92,61 +125,17 @@ export default function MajorClientsGrid() {
               <div className="p-8 text-center">
                 <div className="flex justify-center mb-6">
                   <div className="w-24 h-24 bg-white rounded-full p-3 shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <img
-                      src={client.logo || "/placeholder.svg"}
-                      alt={`${client.name} Logo`}
-                      className="w-full h-full object-contain"
-                    />
+                    <img src={client.logo || "/placeholder.svg"} alt={`${client.name} Logo`} className="w-full h-full object-contain" />
                   </div>
                 </div>
 
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 bg-stg-orange rounded-lg flex items-center justify-center">
-                    <client.icon className="h-6 w-6 text-white" />
-                  </div>
-                </div>
-
-                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-stg-orange transition-colors duration-300">
-                  {client.name}
-                </h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-stg-orange transition-colors duration-300">{client.name}</h3>
                 <p className="text-stg-orange font-semibold mb-4">{client.subtitle}</p>
                 <p className="text-gray-600 leading-relaxed mb-6">{client.description}</p>
 
                 {/* Client Info */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Since</h4>
-                    <p className="text-stg-orange font-bold">{client.year}</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Status</h4>
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm font-semibold">
-                      {client.status}
-                    </span>
-                  </div>
-                </div>
 
                 {/* Services */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                    Services Provided
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {client.services.map((service, serviceIndex) => (
-                      <span
-                        key={serviceIndex}
-                        className="bg-orange-100 text-stg-orange px-3 py-1 rounded-full text-sm font-medium"
-                      >
-                        {service}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Action Button */}
-                <button className="w-full bg-stg-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
-                  View Case Study
-                </button>
               </div>
             </div>
           ))}
@@ -181,5 +170,5 @@ export default function MajorClientsGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }

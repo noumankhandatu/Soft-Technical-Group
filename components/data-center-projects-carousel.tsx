@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight, Server, Network, Database, Shield } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Server, Network, Database, Shield } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const slides = [
   {
@@ -41,23 +41,23 @@ const slides = [
     bgColor: "bg-gradient-to-r from-orange-700 via-stg-orange to-orange-500",
     icon: Shield,
   },
-]
+];
 
 export default function DataCenterProjectsCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 6000)
-    return () => clearInterval(timer)
-  }, [])
+    const timer = setInterval(nextSlide, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="py-16 bg-white">
@@ -75,11 +75,7 @@ export default function DataCenterProjectsCarousel() {
             <div
               key={slide.id}
               className={`absolute inset-0 transition-transform duration-700 ease-in-out ${
-                index === currentSlide
-                  ? "translate-x-0"
-                  : index < currentSlide
-                    ? "-translate-x-full"
-                    : "translate-x-full"
+                index === currentSlide ? "translate-x-0" : index < currentSlide ? "-translate-x-full" : "translate-x-full"
               }`}
             >
               <div className="w-full h-full relative">
@@ -108,37 +104,6 @@ export default function DataCenterProjectsCarousel() {
                       }}
                     />
                   ))}
-                </div>
-
-                <div className="container mx-auto px-4 z-10 relative h-full flex items-center">
-                  <div className="text-center text-white max-w-4xl mx-auto bg-black/20 backdrop-blur-sm p-8 rounded-2xl">
-                    <div className="flex justify-center mb-6 animate-fade-in-up">
-                      <div className="w-20 h-20 bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center">
-                        <slide.icon className="h-10 w-10 text-white" />
-                      </div>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-up animation-delay-200 drop-shadow-lg">
-                      {slide.title}
-                    </h1>
-                    <h2 className="text-xl md:text-2xl font-semibold mb-6 text-orange-100 animate-fade-in-up animation-delay-400 drop-shadow-md">
-                      {slide.subtitle}
-                    </h2>
-                    <p className="text-lg md:text-xl mb-8 leading-relaxed animate-fade-in-up animation-delay-600 drop-shadow-md">
-                      {slide.description}
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-800">
-                      <Button size="lg" className="bg-white text-gray-800 hover:bg-gray-100 font-semibold px-8 py-3">
-                        View Project Details
-                      </Button>
-                      <Button
-                        size="lg"
-                        variant="outline"
-                        className="border-white text-white hover:bg-white hover:text-gray-800 font-semibold px-8 py-3 bg-transparent"
-                      >
-                        Get Similar Solution
-                      </Button>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -202,5 +167,5 @@ export default function DataCenterProjectsCarousel() {
         </div>
       </div>
     </section>
-  )
+  );
 }
