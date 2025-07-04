@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Header from "../header";
 import TeamHero from "../../components/team-hero";
 import TeamIntro from "../../components/team-intro";
-import CEOStory from "../../components/ceo-story";
+// import CEOStory from "../../components/ceo-story";
 import TeamMembers from "../../components/team-members";
 import TeamValues from "../../components/team-values";
 
@@ -95,7 +95,7 @@ export default function OurTeamPage() {
         <main>
           <TeamHero />
           <TeamIntro />
-          <CEOStory />
+          {/* <CEOStory /> */}
           <TeamMembers />
           <TeamValues />
         </main>
