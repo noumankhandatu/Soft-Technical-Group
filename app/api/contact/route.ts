@@ -1,8 +1,8 @@
-import { type NextRequest, NextResponse } from "next/server"
-import nodemailer from "nodemailer"
+import { type NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 // Create transporter (you'll need to configure with your email provider)
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST || "smtp.gmail.com",
   port: Number.parseInt(process.env.SMTP_PORT || "587"),
   secure: false, // true for 465, false for other ports
@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransporter({
     user: process.env.SMTP_USER, // your email
     pass: process.env.SMTP_PASS, // your email password or app password
   },
-})
+});
 
 // HTML template for user confirmation email
 const getUserEmailTemplate = (firstName: string, lastName: string) => `
@@ -201,7 +201,7 @@ const getUserEmailTemplate = (firstName: string, lastName: string) => `
     </div>
 </body>
 </html>
-`
+`;
 
 // HTML template for admin notification email
 const getAdminEmailTemplate = (formData: any) => `
@@ -389,7 +389,9 @@ const getAdminEmailTemplate = (formData: any) => `
             </div>
             
             <div style="text-align: center; margin-top: 30px;">
-                <a href="mailto:${formData.email}?subject=Re: Your Inquiry to STG&body=Dear ${formData.firstName} ${formData.lastName},%0D%0A%0D%0AThank you for contacting Soft Technical Group..." class="btn">
+                <a href="mailto:${formData.email}?subject=Re: Your Inquiry to STG&body=Dear ${formData.firstName} ${
+  formData.lastName
+},%0D%0A%0D%0AThank you for contacting Soft Technical Group..." class="btn">
                     📧 Reply to Client
                 </a>
                 <a href="tel:${formData.email}" class="btn">
@@ -407,22 +409,22 @@ const getAdminEmailTemplate = (formData: any) => `
     </div>
 </body>
 </html>
-`
+`;
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json()
-    const { firstName, lastName, email, city, message } = body
+    const body = await request.json();
+    const { firstName, lastName, email, city, message } = body;
 
     // Validate required fields
     if (!firstName || !lastName || !email || !city || !message) {
-      return NextResponse.json({ error: "All fields are required" }, { status: 400 })
+      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
     }
 
     // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return NextResponse.json({ error: "Invalid email format" }, { status: 400 })
+      return NextResponse.json({ error: "Invalid email format" }, { status: 400 });
     }
 
     // Send confirmation email to user
@@ -434,7 +436,7 @@ export async function POST(request: NextRequest) {
       to: email,
       subject: "✅ Thank You for Contacting STG - We'll Be In Touch Soon!",
       html: getUserEmailTemplate(firstName, lastName),
-    }
+    };
 
     // Send notification email to admin
     const adminMailOptions = {
@@ -445,26 +447,26 @@ export async function POST(request: NextRequest) {
       to: process.env.ADMIN_EMAIL || process.env.SMTP_USER || "info@stg.com.pk",
       subject: `🔔 New Contact Form Submission from ${firstName} ${lastName} (${city})`,
       html: getAdminEmailTemplate({ firstName, lastName, email, city, message }),
-    }
+    };
 
     // Send both emails
-    await Promise.all([transporter.sendMail(userMailOptions), transporter.sendMail(adminMailOptions)])
+    await Promise.all([transporter.sendMail(userMailOptions), transporter.sendMail(adminMailOptions)]);
 
     return NextResponse.json(
       {
         success: true,
         message: "Thank you for your message! We'll contact you as soon as possible.",
       },
-      { status: 200 },
-    )
+      { status: 200 }
+    );
   } catch (error) {
-    console.error("Contact form error:", error)
+    console.error("Contact form error:", error);
     return NextResponse.json(
       {
         error: "Failed to send message. Please try again later or contact us directly.",
         details: process.env.NODE_ENV === "development" ? error : undefined,
       },
-      { status: 500 },
-    )
+      { status: 500 }
+    );
   }
 }
