@@ -1,0 +1,49 @@
+# Robots.txt for STG (Soft Technical Group) Pakistan
+# https://stg.com.pk
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://stg.com.pk/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow access to important pages
+Allow: /services
+Allow: /data-center
+Allow: /major-projects
+Allow: /major-clients
+Allow: /our-team
+Allow: /contact
+Allow: /faq
+Allow: /privacy-policy
+
+# Host directive (helps with canonicalization)
+Host: https://stg.com.pk
