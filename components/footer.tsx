@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link";
+import { MapPin, Phone, Mail, Clock, Facebook, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   const services = [
@@ -9,7 +9,7 @@ export default function Footer() {
     "Software Development",
     "Surveillance Systems",
     "Technical Support",
-  ]
+  ];
 
   const quickLinks = [
     { name: "About Us", href: "/" },
@@ -18,14 +18,14 @@ export default function Footer() {
     { name: "Data Center", href: "/data-center" },
     { name: "Our Team", href: "/our-team" },
     { name: "Contact Us", href: "/contact" },
-  ]
+  ];
 
   const legalLinks = [
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "FAQ", href: "/faq" },
     { name: "Terms of Service", href: "/terms" },
     { name: "Support", href: "/support" },
-  ]
+  ];
 
   return (
     <footer className="bg-gray-900 text-white relative overflow-hidden">
@@ -50,20 +50,20 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1 scroll-animate stagger-1">
-            <div className="flex items-center mb-6 group">
+            {/* <div className="flex items-center mb-6 group">
               <div className="w-12 h-12 bg-stg-orange rounded-lg flex items-center justify-center text-white font-bold text-xl mr-3 hover-scale animate-glow">
                 STG
               </div>
               <div>
-                <h3 className="text-xl font-bold group-hover:text-stg-orange transition-colors duration-300">
-                  Soft Technical Group
-                </h3>
+                <h3 className="text-xl font-bold group-hover:text-stg-orange transition-colors duration-300">Soft Technical Group</h3>
                 <p className="text-stg-orange text-sm animate-pulse-continuous">Developing the future...</p>
               </div>
-            </div>
+            </div> */}
+            <img src="/white-logo.jpg" alt="" className="h-[88px]" />
+
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Leading IT solutions provider in Gilgit-Baltistan, specializing in data centers, networking, and
-              comprehensive technical support since 2006.
+              Leading IT solutions provider in Gilgit-Baltistan, specializing in data centers, networking, and comprehensive technical support since
+              2006.
             </p>
             <div className="flex space-x-4">
               <a
@@ -93,10 +93,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index} className={`scroll-animate stagger-${index + 1}`}>
-                  <Link
-                    href="/services"
-                    className="text-gray-300 hover:text-stg-orange transition-all duration-300 hover:translate-x-2 inline-block"
-                  >
+                  <Link href="/services" className="text-gray-300 hover:text-stg-orange transition-all duration-300 hover:translate-x-2 inline-block">
                     {service}
                   </Link>
                 </li>
@@ -110,10 +107,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index} className={`scroll-animate stagger-${index + 1}`}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-300 hover:text-stg-orange transition-all duration-300 hover:translate-x-2 inline-block"
-                  >
+                  <Link href={link.href} className="text-gray-300 hover:text-stg-orange transition-all duration-300 hover:translate-x-2 inline-block">
                     {link.name}
                   </Link>
                 </li>
@@ -188,13 +182,11 @@ export default function Footer() {
               <span>•</span>
               <span className="hover:text-stg-orange transition-colors duration-300">17+ Years Experience</span>
               <span>•</span>
-              <span className="hover:text-stg-orange transition-colors duration-300 animate-pulse-continuous">
-                4 Data Centers
-              </span>
+              <span className="hover:text-stg-orange transition-colors duration-300 animate-pulse-continuous">4 Data Centers</span>
             </div>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

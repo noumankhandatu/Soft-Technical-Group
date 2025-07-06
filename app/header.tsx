@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { Menu } from "lucide-react"
-import Link from "next/link"
-import { useState, useEffect } from "react"
-import { usePathname } from "next/navigation"
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -21,23 +21,23 @@ export default function Header() {
     { name: "Major Clients", href: "/major-clients" },
     { name: "Our Team", href: "/our-team" },
     { name: "Contact Us", href: "/contact" },
-  ]
+  ];
 
   const isActive = (href: string) => {
     if (href === "/") {
-      return pathname === "/"
+      return pathname === "/";
     }
-    return pathname.startsWith(href)
-  }
+    return pathname.startsWith(href);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+      setIsScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -46,10 +46,10 @@ export default function Header() {
       }`}
     >
       {/* Main header */}
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between h-20">
           {/* Logo and company name */}
-          <div className="flex items-center space-x-4 animate-fade-in-left">
+          {/* <div className="flex items-center space-x-4 animate-fade-in-left">
             <div className="flex items-center group">
               <div className="w-12 h-12 bg-stg-orange rounded-lg flex items-center justify-center text-white font-bold text-xl hover-scale animate-glow">
                 STG
@@ -61,7 +61,8 @@ export default function Header() {
                 <p className="text-sm text-stg-orange font-medium animate-pulse-continuous">Developing the future...</p>
               </div>
             </div>
-          </div>
+          </div> */}
+          <img src="/logo.png" alt="" className="h-[60px] lg:h-[88px]" />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 animate-fade-in-down">
@@ -87,11 +88,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button
-                variant="outline"
-                size="icon"
-                className="lg:hidden bg-transparent border-gray-300 hover-scale animate-fade-in-right"
-              >
+              <Button variant="outline" size="icon" className="lg:hidden bg-transparent border-gray-300 hover-scale animate-fade-in-right">
                 <Menu className="h-6 w-6 text-gray-700" />
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
@@ -111,7 +108,9 @@ export default function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`text-lg font-medium py-2 px-4 rounded-lg transition-all duration-300 hover-lift animate-fade-in-left stagger-${index + 1} ${
+                    className={`text-lg font-medium py-2 px-4 rounded-lg transition-all duration-300 hover-lift animate-fade-in-left stagger-${
+                      index + 1
+                    } ${
                       isActive(item.href)
                         ? "text-stg-orange bg-orange-50 border-l-4 border-stg-orange font-bold"
                         : "text-gray-800 hover:text-stg-orange hover:bg-orange-50"
@@ -127,5 +126,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
