@@ -1,11 +1,11 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import Footer from "../components/footer"
-import ScrollAnimationProvider from "../components/scroll-animation-provider"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Footer from "../components/footer";
+import ScrollAnimationProvider from "../components/scroll-animation-provider";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://stg.com.pk"),
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   },
   description:
     "STG (Soft Technical Group) - Premier IT solutions provider in Gilgit-Baltistan Pakistan since 2006. Specializing in data center establishment, server customization, network infrastructure, government IT services, and 24/7 technical support. 4 tier data centers established.",
+
   keywords: [
     "STG",
     "Soft Technical Group",
@@ -116,14 +117,19 @@ export const metadata: Metadata = {
     "geo.position": "35.9166667;74.3333333",
     ICBM: "35.9166667, 74.3333333",
   },
-    generator: 'v0.dev'
-}
+  generator: "v0.dev",
+  icons: {
+    icon: [
+      {
+        rel: "icon",
+        type: "image/ico",
+        url: "/favicon.ico",
+      },
+    ],
+  },
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -181,11 +187,7 @@ export default function RootLayout({
                 },
               ],
               email: "info@stg.com.pk",
-              sameAs: [
-                "https://www.facebook.com/STGPakistan",
-                "https://www.linkedin.com/company/stg-pakistan",
-                "https://twitter.com/STGPakistan",
-              ],
+              sameAs: ["https://www.facebook.com/STGPakistan", "https://www.linkedin.com/company/stg-pakistan", "https://twitter.com/STGPakistan"],
               areaServed: {
                 "@type": "State",
                 name: "Gilgit-Baltistan",
@@ -318,7 +320,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
@@ -329,5 +331,5 @@ export default function RootLayout({
         </ScrollAnimationProvider>
       </body>
     </html>
-  )
+  );
 }
