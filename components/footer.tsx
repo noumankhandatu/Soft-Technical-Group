@@ -59,7 +59,7 @@ export default function Footer() {
                 <p className="text-stg-orange text-sm animate-pulse-continuous">Developing the future...</p>
               </div>
             </div> */}
-            <img src="/white-logo.jpg" alt="" className="h-[88px]" />
+            <img src="/newlogo.png" alt="" className="h-[88px]" />
 
             <p className="text-gray-300 mb-6 leading-relaxed">
               Leading IT solutions provider in Gilgit-Baltistan, specializing in data centers, networking, and comprehensive technical support since
