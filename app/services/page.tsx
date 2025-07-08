@@ -108,7 +108,26 @@ export default function ServicesPage() {
       <div className="min-h-screen bg-white">
         <Header />
         <main>
-          <video className="w-full h-full object-cover" src="/video.mp4" autoPlay loop muted playsInline />
+          <div className="relative w-full h-screen overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-full scale-[1.2]">
+              <iframe
+                className="w-full h-full pointer-events-none"
+                src="https://www.youtube.com/embed/MM4JybO9Yxw?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1&rel=0&playlist=MM4JybO9Yxw"
+                title="Background Video"
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              />
+            </div>
+
+            <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-4">
+              <h1 className="text-white text-[60px] font-bold">Soft Technical Group</h1>
+              <p className="text-white text-lg text-center max-w-4xl mt-4">
+                Empowering businesses with innovative software solutions, Soft Technical Group delivers cutting-edge web and mobile applications
+                tailored to your needs. From strategy to execution, we help you thrive in the digital world.
+              </p>
+            </div>
+          </div>
 
           <ServicesContent />
           <ServicesGrid />

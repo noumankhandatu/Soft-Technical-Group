@@ -62,7 +62,9 @@ export default function Header() {
               </div>
             </div>
           </div> */}
-          <img src="/newlogo.png" alt="" className="h-[60px] lg:h-[88px]" />
+          <Link href={"/"}>
+            <img src="/newlogo.png" alt="" className="h-[60px] lg:h-[88px]" />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 animate-fade-in-down">

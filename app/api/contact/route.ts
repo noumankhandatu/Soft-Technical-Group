@@ -133,7 +133,7 @@ const getUserEmailTemplate = (firstName: string, lastName: string) => `
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">STG</div>
+  <img src="https://res.cloudinary.com/noumancloud/image/upload/v1751998534/newlogo_ohpnci.png" alt="STG Logo" style="width: 60px; height: 60px; border-radius: 12px;" />
             <h1 style="margin: 0; font-size: 28px;">Thank You for Contacting Us!</h1>
             <p style="margin: 10px 0 0 0; opacity: 0.9;">Soft Technical Group</p>
         </div>
@@ -324,8 +324,7 @@ const getAdminEmailTemplate = (formData: any) => `
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">STG</div>
-            <h1 style="margin: 0; font-size: 28px;">🔔 New Contact Form Submission</h1>
+  <img src="https://res.cloudinary.com/noumancloud/image/upload/v1751998534/newlogo_ohpnci.png" alt="STG Logo" style="width: 60px; height: 60px; border-radius: 12px;" />
             <p style="margin: 10px 0 0 0; opacity: 0.9;">Website Contact Form</p>
         </div>
         
