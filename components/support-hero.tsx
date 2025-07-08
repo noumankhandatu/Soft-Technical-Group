@@ -37,7 +37,7 @@ export default function SupportHero() {
           </div>
 
           {/* Quick Contact Cards */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300">
               <Phone className="h-12 w-12 mx-auto mb-4 text-white" />
               <h3 className="text-xl font-bold mb-2">Emergency Hotline</h3>
@@ -56,12 +56,12 @@ export default function SupportHero() {
               </a>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300">
+            {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-300">
               <MessageCircle className="h-12 w-12 mx-auto mb-4 text-white" />
               <h3 className="text-xl font-bold mb-2">Live Chat</h3>
               <p className="text-orange-100 mb-4">Instant Technical Assistance</p>
               <button className="text-white font-semibold hover:text-orange-200">Start Chat</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

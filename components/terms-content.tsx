@@ -142,12 +142,6 @@ export default function TermsContent() {
                 >
                   Contact Legal Team
                 </a>
-                <a
-                  href="mailto:legal@stg.com.pk"
-                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-stg-orange transition-colors duration-300"
-                >
-                  Email: legal@stg.com.pk
-                </a>
               </div>
             </div>
           </div>

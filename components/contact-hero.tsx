@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight, Phone, Mail, MapPin, Clock } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const slides = [
   {
@@ -41,23 +41,23 @@ const slides = [
     bgColor: "bg-gradient-to-r from-orange-700 via-stg-orange to-orange-500",
     icon: Mail,
   },
-]
+];
 
 export default function ContactHero() {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000)
-    return () => clearInterval(timer)
-  }, [])
+    const timer = setInterval(nextSlide, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="relative w-full h-[500px] md:h-[600px] overflow-hidden">
@@ -87,16 +87,12 @@ export default function ContactHero() {
                     <slide.icon className="h-10 w-10 text-white" />
                   </div>
                 </div>
-                <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up animation-delay-200 drop-shadow-lg">
-                  {slide.title}
-                </h1>
+                <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up animation-delay-200 drop-shadow-lg">{slide.title}</h1>
                 <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-orange-100 animate-fade-in-up animation-delay-400 drop-shadow-md">
                   {slide.subtitle}
                 </h2>
-                <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up animation-delay-600 drop-shadow-md">
-                  {slide.description}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-800">
+                <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in-up animation-delay-600 drop-shadow-md">{slide.description}</p>
+                {/* <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-800">
                   <Button size="lg" className="bg-white text-gray-800 hover:bg-gray-100 font-semibold px-8 py-3">
                     Get In Touch
                   </Button>
@@ -107,7 +103,7 @@ export default function ContactHero() {
                   >
                     Call Now
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -150,5 +146,5 @@ export default function ContactHero() {
         <span className="text-white font-bold text-lg">Let's Connect</span>
       </div>
     </div>
-  )
+  );
 }

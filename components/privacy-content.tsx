@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PrivacyContent() {
   const sections = [
     {
@@ -85,7 +87,7 @@ export default function PrivacyContent() {
         "Phone: [Your phone number]",
       ],
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-white">
@@ -94,17 +96,14 @@ export default function PrivacyContent() {
           <div className="prose prose-lg max-w-none">
             <div className="mb-12 animate-fade-in-up">
               <p className="text-lg text-gray-600 leading-relaxed">
-                At Soft Technical Group (STG), we are committed to protecting your privacy and ensuring the security of
-                your personal information. This Privacy Policy explains how we collect, use, and safeguard your
-                information when you use our services or visit our website.
+                At Soft Technical Group (STG), we are committed to protecting your privacy and ensuring the security of your personal information.
+                This Privacy Policy explains how we collect, use, and safeguard your information when you use our services or visit our website.
               </p>
             </div>
 
             {sections.map((section, index) => (
               <div key={index} className="mb-12 animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-stg-orange">
-                  {section.title}
-                </h2>
+                <h2 className="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-stg-orange">{section.title}</h2>
                 <div className="space-y-4">
                   {section.content.map((paragraph, pIndex) => (
                     <p key={pIndex} className="text-gray-600 leading-relaxed">
@@ -119,15 +118,18 @@ export default function PrivacyContent() {
           <div className="mt-16 p-8 bg-gradient-to-br from-orange-50 to-white rounded-2xl animate-fade-in-up">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">Questions About Our Privacy Policy?</h3>
             <p className="text-gray-600 mb-6">
-              If you have any questions or concerns about our privacy practices, please don't hesitate to contact us.
-              We're committed to transparency and will be happy to address any concerns you may have.
+              If you have any questions or concerns about our privacy practices, please don't hesitate to contact us. We're committed to transparency
+              and will be happy to address any concerns you may have.
             </p>
-            <button className="bg-stg-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300">
+            <Link
+              href={"/contact"}
+              className="bg-stg-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
