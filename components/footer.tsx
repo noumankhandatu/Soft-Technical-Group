@@ -50,7 +50,9 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1 scroll-animate stagger-1">
-            <div className="flex items-center mb-6 group">
+            <img src="/newlogo.png" alt="" className="h-[88px]" />
+
+            {/* <div className="flex items-center mb-6 group">
               <div className="w-12 h-12 bg-stg-orange rounded-lg flex items-center justify-center text-white font-bold text-xl mr-3 hover-scale animate-glow">
                 STG
               </div>
@@ -58,7 +60,7 @@ export default function Footer() {
                 <h3 className="text-xl font-bold group-hover:text-stg-orange transition-colors duration-300">Soft Technical Group</h3>
                 <p className="text-stg-orange text-sm animate-pulse-continuous">Developing the future...</p>
               </div>
-            </div>
+            </div> */}
             <p className="text-gray-300 mb-6 leading-relaxed">
               Leading IT solutions provider in Gilgit-Baltistan, specializing in data centers, networking, and comprehensive technical support since
               2006.
