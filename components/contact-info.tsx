@@ -10,7 +10,7 @@ export default function ContactInfo() {
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+92-XXX-XXXXXXX", "+92-XXX-XXXXXXX", "Landline: XXX-XXXXXXX"],
+      details: ["+92 300 9332626", "+92 300 9332626", "Landline: XXX-XXXXXXX"],
     },
     {
       icon: Mail,
@@ -26,7 +26,7 @@ export default function ContactInfo() {
 
   const quickStats = [
     { icon: Building, number: "4", label: "Data Centers Built" },
-    { icon: Users, number: "500+", label: "Happy Clients" },
+    { icon: Users, number: "50+", label: "Happy Clients" },
     { icon: Clock, number: "24/7", label: "Support Available" },
     { icon: Phone, number: "17+", label: "Years Experience" },
   ];

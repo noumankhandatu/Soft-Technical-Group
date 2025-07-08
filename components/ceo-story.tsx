@@ -1,4 +1,4 @@
-import { Award, Users, Lightbulb, Target } from "lucide-react"
+import { Award, Users, Lightbulb, Target } from "lucide-react";
 
 export default function CEOStory() {
   const achievements = [
@@ -22,7 +22,7 @@ export default function CEOStory() {
       title: "Regional Pioneer",
       description: "First automation systems company",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -30,9 +30,7 @@ export default function CEOStory() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4 animate-fade-in-up">Leadership Story</h2>
           <div className="w-24 h-1 bg-stg-orange mx-auto animate-fade-in-up animation-delay-200"></div>
-          <p className="text-xl text-gray-600 mt-6 animate-fade-in-up animation-delay-400">
-            The visionary behind STG's remarkable journey
-          </p>
+          <p className="text-xl text-gray-600 mt-6 animate-fade-in-up animation-delay-400">The visionary behind STG's remarkable journey</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -73,34 +71,28 @@ export default function CEOStory() {
 
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 In 2006, when the concept of professional IT services was still emerging in Gilgit-Baltistan,
-                <strong className="text-stg-orange"> Zahid</strong> had a revolutionary vision. He saw the untapped
-                potential of technology in transforming how businesses and government organizations operate in the
-                region.
+                <strong className="text-stg-orange"> Zahid</strong> had a revolutionary vision. He saw the untapped potential of technology in
+                transforming how businesses and government organizations operate in the region.
               </p>
 
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Starting with a small team and big dreams, Zahid founded{" "}
-                <strong className="text-stg-orange">Soft Technical Group</strong>
-                with a mission to bridge the digital divide. His deep understanding of both technology and local needs
-                became the cornerstone of STG's success story.
+                Starting with a small team and big dreams, Zahid founded <strong className="text-stg-orange">Soft Technical Group</strong>
+                with a mission to bridge the digital divide. His deep understanding of both technology and local needs became the cornerstone of STG's
+                success story.
               </p>
 
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                Under his leadership, STG became the{" "}
-                <strong className="text-stg-orange">first and only service-based company</strong>
-                in the region to focus on automation systems and standard data centers. His strategic partnerships with
-                government departments have resulted in <strong className="text-stg-orange">4 tier data centers</strong>
+                Under his leadership, STG became the <strong className="text-stg-orange">first and only service-based company</strong>
+                in the region to focus on automation systems and standard data centers. His strategic partnerships with government departments have
+                resulted in <strong className="text-stg-orange">4 tier data centers</strong>
                 that now serve as the backbone of digital infrastructure in Gilgit-Baltistan.
               </p>
 
               <p className="text-lg leading-relaxed text-gray-700 mb-8">
-                Today, Zahid continues to lead STG with the same passion and innovation that started it all. His
-                commitment to excellence and customer satisfaction has made STG a trusted name across government,
-                semi-government, and private sectors.{" "}
-                <strong className="text-stg-orange">
-                  "Excellence is not a destination; it is a continuous journey that never ends"
-                </strong>{" "}
-                - a philosophy that drives every decision at STG.
+                Today, Zahid continues to lead STG with the same passion and innovation that started it all. His commitment to excellence and customer
+                satisfaction has made STG a trusted name across government, semi-government, and private sectors.{" "}
+                <strong className="text-stg-orange">"Excellence is not a destination; it is a continuous journey that never ends"</strong> - a
+                philosophy that drives every decision at STG.
               </p>
             </div>
 
@@ -131,8 +123,8 @@ export default function CEOStory() {
             <div className="bg-stg-orange p-8 rounded-xl text-white relative overflow-hidden">
               <div className="absolute top-0 right-0 text-6xl text-white/20 font-serif">"</div>
               <blockquote className="text-xl font-medium italic mb-4 relative z-10">
-                "Our success is built on the foundation of trust, innovation, and an unwavering commitment to our
-                clients' success. Every challenge is an opportunity to grow and excel."
+                "Our success is built on the foundation of trust, innovation, and an unwavering commitment to our clients' success. Every challenge is
+                an opportunity to grow and excel."
               </blockquote>
               <cite className="text-orange-100 font-semibold">- Zahid, CEO & Founder</cite>
             </div>
@@ -149,7 +141,7 @@ export default function CEOStory() {
           </div>
           <div className="animate-fade-in-up animation-delay-700">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="text-3xl font-bold text-stg-orange mb-2">500+</div>
+              <div className="text-3xl font-bold text-stg-orange mb-2">50+</div>
               <div className="text-gray-600">Projects Delivered</div>
             </div>
           </div>
@@ -168,5 +160,5 @@ export default function CEOStory() {
         </div>
       </div>
     </section>
-  )
+  );
 }

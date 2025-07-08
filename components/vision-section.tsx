@@ -4,6 +4,7 @@ import { Target, Users, TrendingUp, Award } from "lucide-react";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Link from "next/link";
 export default function VisionSection() {
   useEffect(() => {
     AOS.init({
@@ -45,7 +46,7 @@ export default function VisionSection() {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - Image */}
           <div className="animate-fade-in-left">
             <div className="relative">
@@ -98,14 +99,19 @@ export default function VisionSection() {
             </div>
 
             {/* Call to Action */}
-            <div className="mt-8 animate-fade-in-up animation-delay-800">
-              <div className="bg-stg-orange p-6 rounded-lg text-white">
-                <h3 className="text-xl font-semibold mb-2">Ready to Experience Excellence?</h3>
-                <p className="mb-4 opacity-90">Join hundreds of satisfied customers who trust STG for their IT solutions.</p>
-                <button className="bg-white text-stg-orange px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
-                  Get Started Today
-                </button>
-              </div>
+          </div>
+        </div>
+        <div className=" mx-auto w-full lg:w-[100%] ">
+          <div className="mt-8 animate-fade-in-up animation-delay-800">
+            <div className="bg-stg-orange p-6 rounded-lg text-white">
+              <h3 className="text-xl font-semibold mb-2">Ready to Experience Excellence?</h3>
+              <p className="mb-4 opacity-90">Join hundreds of satisfied customers who trust STG for their IT solutions.</p>
+              <Link
+                href={"/contact"}
+                className="bg-white text-stg-orange px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+              >
+                Get Started Today
+              </Link>
             </div>
           </div>
         </div>
@@ -132,7 +138,7 @@ export default function VisionSection() {
           </div>
           <div className="animate-fade-in-up animation-delay-1000">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="text-3xl font-bold text-stg-orange mb-2">500+</div>
+              <div className="text-3xl font-bold text-stg-orange mb-2">50+</div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
           </div>

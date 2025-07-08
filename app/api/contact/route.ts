@@ -169,7 +169,7 @@ const getUserEmailTemplate = (firstName: string, lastName: string) => `
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📞</div>
-                    +92-XXX-XXXXXXX | +92-XXX-XXXXXXX
+                    +92 300 9332626 | +92 300 9332626
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">✉️</div>
@@ -188,7 +188,7 @@ const getUserEmailTemplate = (firstName: string, lastName: string) => `
         
         <div class="footer">
             <p><strong>Soft Technical Group</strong> - Developing the future...</p>
-            <p>Established 2006 | 17+ Years of Excellence | 4 Data Centers | 500+ Happy Clients</p>
+            <p>Established 2006 | 17+ Years of Excellence | 4 Data Centers | 50+ Happy Clients</p>
             <div class="social-links">
                 <a href="#" class="social-link">Facebook</a>
                 <a href="#" class="social-link">LinkedIn</a>

@@ -1,8 +1,8 @@
-import type { MetadataRoute } from "next"
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://stg.com.pk"
-  const currentDate = new Date()
+  const baseUrl = "https://stg.com.pk";
+  const currentDate = new Date();
 
   return [
     {
@@ -59,5 +59,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-  ]
+    {
+      url: `${baseUrl}/terms`,
+      lastModified: currentDate,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/support`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
 }

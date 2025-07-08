@@ -1,4 +1,5 @@
 import { Award, Users, Zap, Shield } from "lucide-react";
+import Link from "next/link";
 
 export default function DataCenterExpertise() {
   const expertise = [
@@ -52,12 +53,12 @@ export default function DataCenterExpertise() {
             we've got you covered.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-stg-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+            <Link
+              href={"/contact"}
+              className="bg-white text-stg-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            >
               Get Free Consultation
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-stg-orange transition-colors duration-300">
-              Download Brochure
-            </button>
+            </Link>
           </div>
         </div>
       </div>

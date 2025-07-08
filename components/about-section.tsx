@@ -44,7 +44,7 @@ export default function AboutSection() {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - Text Content */}
           <div className="space-y-6 scroll-animate-left">
             <div className="prose prose-lg text-gray-600">
@@ -75,29 +75,8 @@ export default function AboutSection() {
 
               <p className="leading-relaxed text-gray-600 scroll-animate stagger-5">
                 We are dedicated to providing consistently high client satisfaction by rendering excellent service, carrying items that are not
-                locally available, and furnishing a warm, pleasant atmosphere at a competitive price. Our work environment will be one of respect for
-                our clients and our community.
+                locally available, and furnishing a warm, pleasant atmosphere at a competitive price.
               </p>
-            </div>
-
-            {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-4 mt-8">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center space-x-3 p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-all duration-300 card-hover scroll-animate stagger-${
-                    index + 6
-                  }`}
-                >
-                  <div className="w-10 h-10 bg-stg-orange rounded-lg flex items-center justify-center flex-shrink-0 hover-scale animate-glow">
-                    <feature.icon className="h-5 w-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800 text-sm">{feature.title}</h4>
-                    <p className="text-gray-600 text-xs">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
@@ -119,7 +98,7 @@ export default function AboutSection() {
                     <div className="text-gray-600 text-sm">Years Experience</div>
                   </div>
                   <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg text-center card-hover scroll-animate-scale stagger-2">
-                    <div className="text-2xl font-bold text-stg-orange animate-pulse-continuous">500+</div>
+                    <div className="text-2xl font-bold text-stg-orange animate-pulse-continuous">50+</div>
                     <div className="text-gray-600 text-sm">Happy Clients</div>
                   </div>
                 </div>
@@ -130,6 +109,28 @@ export default function AboutSection() {
               <div className="absolute top-20 left-4 w-3 h-3 bg-orange-300 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
               <div className="absolute bottom-20 right-8 w-2 h-2 bg-orange-400 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
             </div>
+          </div>
+        </div>
+
+        <div className=" mx-auto w-full lg:w-[90%] ">
+          {/* Features Grid */}
+          <div className="grid sm:grid-cols-2 gap-4 mt-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className={`flex items-center space-x-3 p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-all duration-300 card-hover scroll-animate stagger-${
+                  index + 6
+                }`}
+              >
+                <div className="w-10 h-10 bg-stg-orange rounded-lg flex items-center justify-center flex-shrink-0 hover-scale animate-glow">
+                  <feature.icon className="h-5 w-5 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800 text-sm">{feature.title}</h4>
+                  <p className="text-gray-600 text-xs">{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

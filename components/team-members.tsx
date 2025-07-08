@@ -1,4 +1,5 @@
-import { User, DollarSign, Code, Zap, Network } from "lucide-react"
+import { User, DollarSign, Code, Zap, Network } from "lucide-react";
+import Link from "next/link";
 
 export default function TeamMembers() {
   const teamMembers = [
@@ -6,30 +7,27 @@ export default function TeamMembers() {
       id: 1,
       name: "Zulfiqar Hussain",
       position: "Managing Director",
-      description:
-        "Leading STG with strategic vision and extensive experience in IT infrastructure and business development.",
+      description: "Leading STG with strategic vision and extensive experience in IT infrastructure and business development.",
       icon: User,
       image: "/placeholder.svg?height=300&width=300",
       expertise: ["Strategic Planning", "Business Development", "IT Infrastructure", "Team Leadership"],
-      experience: "15+ Years",
+      experience: "5+ Years",
     },
     {
       id: 2,
       name: "Shahab Anjum",
       position: "Manager Finance",
-      description:
-        "Managing financial operations and ensuring sound fiscal management across all STG projects and initiatives.",
+      description: "Managing financial operations and ensuring sound fiscal management across all STG projects and initiatives.",
       icon: DollarSign,
       image: "/placeholder.svg?height=300&width=300",
       expertise: ["Financial Management", "Budget Planning", "Cost Analysis", "Project Finance"],
-      experience: "12+ Years",
+      experience: "4+ Years",
     },
     {
       id: 3,
       name: "Ehsan Mehmood",
       position: "Software Engineer",
-      description:
-        "Developing innovative software solutions and custom applications to meet diverse client requirements.",
+      description: "Developing innovative software solutions and custom applications to meet diverse client requirements.",
       icon: Code,
       image: "/placeholder.svg?height=300&width=300",
       expertise: ["Software Development", "Web Applications", "Database Design", "System Integration"],
@@ -39,25 +37,23 @@ export default function TeamMembers() {
       id: 4,
       name: "Jamsheed",
       position: "Electrician",
-      description:
-        "Ensuring reliable electrical systems and power infrastructure for all data center and IT installations.",
+      description: "Ensuring reliable electrical systems and power infrastructure for all data center and IT installations.",
       icon: Zap,
       image: "/placeholder.svg?height=300&width=300",
       expertise: ["Electrical Systems", "Power Distribution", "Equipment Installation", "Maintenance"],
-      experience: "10+ Years",
+      experience: "4+ Years",
     },
     {
       id: 5,
       name: "Usman",
       position: "Network Technical",
-      description:
-        "Designing and implementing robust network solutions and ensuring optimal connectivity and performance.",
+      description: "Designing and implementing robust network solutions and ensuring optimal connectivity and performance.",
       icon: Network,
       image: "/placeholder.svg?height=300&width=300",
       expertise: ["Network Design", "System Administration", "Technical Support", "Infrastructure"],
       experience: "7+ Years",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -88,9 +84,7 @@ export default function TeamMembers() {
                   </div>
                 </div>
                 <div className="absolute top-4 right-4">
-                  <span className="bg-white/90 text-stg-orange px-3 py-1 rounded-full text-sm font-semibold">
-                    {member.experience}
-                  </span>
+                  <span className="bg-white/90 text-stg-orange px-3 py-1 rounded-full text-sm font-semibold">{member.experience}</span>
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-white text-xl font-bold mb-1">{member.name}</h3>
@@ -107,10 +101,7 @@ export default function TeamMembers() {
                   <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Expertise</h4>
                   <div className="flex flex-wrap gap-2">
                     {member.expertise.map((skill, skillIndex) => (
-                      <span
-                        key={skillIndex}
-                        className="bg-orange-100 text-stg-orange px-3 py-1 rounded-full text-sm font-medium"
-                      >
+                      <span key={skillIndex} className="bg-orange-100 text-stg-orange px-3 py-1 rounded-full text-sm font-medium">
                         {skill}
                       </span>
                     ))}
@@ -118,14 +109,16 @@ export default function TeamMembers() {
                 </div>
 
                 {/* Contact Button */}
-                <button className="w-full bg-stg-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 group-hover:transform group-hover:-translate-y-1">
-                  Connect with {member.name.split(" ")[0]}
-                </button>
+                <Link href={"/contact"}>
+                  <button className="w-full bg-stg-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 group-hover:transform group-hover:-translate-y-1">
+                    Connect with {member.name.split(" ")[0]}
+                  </button>
+                </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

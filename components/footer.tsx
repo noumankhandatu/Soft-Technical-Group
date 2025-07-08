@@ -50,7 +50,7 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1 scroll-animate stagger-1">
-            {/* <div className="flex items-center mb-6 group">
+            <div className="flex items-center mb-6 group">
               <div className="w-12 h-12 bg-stg-orange rounded-lg flex items-center justify-center text-white font-bold text-xl mr-3 hover-scale animate-glow">
                 STG
               </div>
@@ -58,9 +58,7 @@ export default function Footer() {
                 <h3 className="text-xl font-bold group-hover:text-stg-orange transition-colors duration-300">Soft Technical Group</h3>
                 <p className="text-stg-orange text-sm animate-pulse-continuous">Developing the future...</p>
               </div>
-            </div> */}
-            <img src="/white-logo.jpg" alt="" className="h-[88px]" />
-
+            </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Leading IT solutions provider in Gilgit-Baltistan, specializing in data centers, networking, and comprehensive technical support since
               2006.
@@ -114,7 +112,7 @@ export default function Footer() {
               ))}
             </ul>
             <div className="mt-6">
-              <h5 className="text-sm font-semibold mb-3 text-gray-400">Legal</h5>
+              <h5 className="text-sm font-semibold mb-3 text-gray-400">Legal & Support</h5>
               <ul className="space-y-2">
                 {legalLinks.map((link, index) => (
                   <li key={index} className={`scroll-animate stagger-${index + 7}`}>
@@ -146,8 +144,7 @@ export default function Footer() {
               <div className="flex items-center space-x-3 group scroll-animate stagger-2">
                 <Phone className="h-5 w-5 text-stg-orange flex-shrink-0 group-hover:animate-bounce" />
                 <div className="text-gray-300 text-sm">
-                  <p>+92-XXX-XXXXXXX</p>
-                  <p>+92-XXX-XXXXXXX</p>
+                  <p>+92-21-34567890</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 group scroll-animate stagger-3">

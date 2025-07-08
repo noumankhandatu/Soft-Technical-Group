@@ -1,17 +1,4 @@
-import {
-  Database,
-  Server,
-  HardDrive,
-  Laptop,
-  Gamepad2,
-  Camera,
-  Cpu,
-  Wifi,
-  Code,
-  Shield,
-  MapPin,
-  Radio,
-} from "lucide-react"
+import { Database, Server, HardDrive, Laptop, Gamepad2, Camera, Cpu, Wifi, Code, Shield, MapPin, Radio } from "lucide-react";
 
 export default function ServicesGrid() {
   const services = [
@@ -87,7 +74,7 @@ export default function ServicesGrid() {
       description: "Clear, Reliable Communication for Every Environment",
       features: ["PBAX Systems", "Walkie-Talkies", "Pagers", "Intercom Solutions"],
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -103,9 +90,7 @@ export default function ServicesGrid() {
                 <div className="w-16 h-16 bg-stg-orange rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-stg-orange transition-colors duration-300">
-                  {service.title}
-                </h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-stg-orange transition-colors duration-300">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed mb-4">{service.description}</p>
               </div>
 
@@ -118,15 +103,15 @@ export default function ServicesGrid() {
                 ))}
               </div>
 
-              <div className="mt-6 pt-4 border-t border-gray-100">
+              {/* <div className="mt-6 pt-4 border-t border-gray-100">
                 <button className="text-stg-orange font-semibold hover:text-orange-600 transition-colors duration-300 text-sm">
                   Learn More →
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

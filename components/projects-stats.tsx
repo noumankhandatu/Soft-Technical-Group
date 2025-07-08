@@ -1,4 +1,5 @@
-import { Award, Building2, Users, Clock } from "lucide-react"
+import { Award, Building2, Users, Clock } from "lucide-react";
+import Link from "next/link";
 
 export default function ProjectsStats() {
   return (
@@ -44,16 +45,16 @@ export default function ProjectsStats() {
         <div className="bg-gradient-to-r from-stg-orange to-orange-600 rounded-2xl p-12 text-center text-white animate-fade-in-up animation-delay-800">
           <h3 className="text-3xl font-bold mb-4">Ready for Your Next Major Project?</h3>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Let our proven expertise in data center establishment and server customization transform your IT
-            infrastructure. Contact us for a comprehensive consultation.
+            Let our proven expertise in data center establishment and server customization transform your IT infrastructure. Contact us for a
+            comprehensive consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-stg-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+            <Link
+              href={"/contact"}
+              className="bg-white text-stg-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            >
               Start Your Project
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-stg-orange transition-colors duration-300">
-              Download Case Studies
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -65,15 +66,15 @@ export default function ProjectsStats() {
               <div>
                 <h4 className="text-xl font-semibold text-stg-orange mb-4">SAN Customization</h4>
                 <p className="text-gray-600 leading-relaxed">
-                  Advanced Storage Area Network design and implementation tailored to specific organizational needs,
-                  ensuring optimal performance and scalability.
+                  Advanced Storage Area Network design and implementation tailored to specific organizational needs, ensuring optimal performance and
+                  scalability.
                 </p>
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-stg-orange mb-4">High-End Server Solutions</h4>
                 <p className="text-gray-600 leading-relaxed">
-                  Custom server configurations and deployments for mission-critical applications, with focus on
-                  reliability, performance, and future-proofing.
+                  Custom server configurations and deployments for mission-critical applications, with focus on reliability, performance, and
+                  future-proofing.
                 </p>
               </div>
             </div>
@@ -81,5 +82,5 @@ export default function ProjectsStats() {
         </div>
       </div>
     </section>
-  )
+  );
 }

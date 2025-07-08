@@ -63,7 +63,7 @@ export default function DataCenterProjectsCarousel() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4 animate-fade-in-up">Our Data Center Projects</h2>
+          {/* <h2 className="text-4xl font-bold text-gray-800 mb-4 animate-fade-in-up">Our Data Center Projects</h2> */}
           <div className="w-24 h-1 bg-stg-orange mx-auto animate-fade-in-up animation-delay-200"></div>
           <p className="text-xl text-gray-600 mt-6 animate-fade-in-up animation-delay-400">
             Real projects showcasing our expertise in data center infrastructure

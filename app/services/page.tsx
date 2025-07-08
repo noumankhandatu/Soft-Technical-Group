@@ -1,9 +1,9 @@
-import type { Metadata } from "next"
-import Header from "../header"
-import ServicesCarousel from "../../components/services-carousel"
-import ServicesContent from "../../components/services-content"
-import ServicesGrid from "../../components/services-grid"
-import WhySTG from "../../components/why-stg"
+import type { Metadata } from "next";
+import Header from "../header";
+import ServicesCarousel from "../../components/services-carousel";
+import ServicesContent from "../../components/services-content";
+import ServicesGrid from "../../components/services-grid";
+import WhySTG from "../../components/why-stg";
 
 export const metadata: Metadata = {
   title: "IT Services Pakistan | STG - Network Solutions, Server Systems & Technical Support Gilgit",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://stg.com.pk/services",
   },
-}
+};
 
 export default function ServicesPage() {
   return (
@@ -108,12 +108,13 @@ export default function ServicesPage() {
       <div className="min-h-screen bg-white">
         <Header />
         <main>
-          <ServicesCarousel />
+          <video className="w-full h-full object-cover" src="/video.mp4" autoPlay loop muted playsInline />
+
           <ServicesContent />
           <ServicesGrid />
           <WhySTG />
         </main>
       </div>
     </>
-  )
+  );
 }

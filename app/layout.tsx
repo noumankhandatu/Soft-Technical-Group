@@ -168,7 +168,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               contactPoint: [
                 {
                   "@type": "ContactPoint",
-                  telephone: "+92-XXX-XXXXXXX",
+                  telephone: "+92 300 9332626",
                   contactType: "customer service",
                   availableLanguage: ["English", "Urdu"],
                   hoursAvailable: {
@@ -180,7 +180,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 },
                 {
                   "@type": "ContactPoint",
-                  telephone: "+92-XXX-XXXXXXX",
+                  telephone: "+92 300 9332626",
                   contactType: "technical support",
                   availableLanguage: ["English", "Urdu"],
                   hoursAvailable: "24/7",
@@ -271,7 +271,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@id": "https://stg.com.pk/#organization",
               name: "Soft Technical Group (STG)",
               image: "https://stg.com.pk/images/stg-office.jpg",
-              telephone: "+92-XXX-XXXXXXX",
+              telephone: "+92 300 9332626",
               email: "info@stg.com.pk",
               address: {
                 "@type": "PostalAddress",
