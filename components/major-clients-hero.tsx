@@ -28,7 +28,7 @@ const slides = [
     title: "Educational Excellence",
     subtitle: "Academic Institution Partner",
     description: "Supporting educational institutions with modern IT infrastructure and solutions",
-    image: "https://stg.com.pk/wp-content/uploads/2020/07/home-security-system-copy.jpg",
+    image: "/images/security-system.png",
     bgColor: "bg-gradient-to-r from-stg-orange via-orange-500 to-orange-600",
     icon: Users,
   },

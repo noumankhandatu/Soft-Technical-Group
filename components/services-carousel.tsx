@@ -37,7 +37,7 @@ const slides = [
     id: 5,
     title: "Security Systems",
     description: "State-of-the-art surveillance and security solutions for complete peace of mind",
-    image: "https://stg.com.pk/wp-content/uploads/2020/07/home-security-system-copy.jpg",
+    image: "/images/security-system.png",
     bgColor: "bg-gradient-to-r from-orange-500 via-orange-600 to-stg-orange",
   },
 ];

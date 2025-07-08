@@ -37,7 +37,7 @@ const slides = [
     title: "Your Success",
     subtitle: "Our Mission",
     description: "Delivering innovative, reliable, and impactful technology solutions",
-    image: "https://stg.com.pk/wp-content/uploads/2020/07/home-security-system-copy.jpg",
+    image: "/images/security-system.png",
     bgColor: "bg-gradient-to-r from-orange-700 via-stg-orange to-orange-500",
     icon: Heart,
   },

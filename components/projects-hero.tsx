@@ -28,7 +28,7 @@ const slides = [
     title: "SAN & Server Expertise",
     subtitle: "Customization & High-End Solutions",
     description: "Specialized in Storage Area Networks and enterprise server customization",
-    image: "https://stg.com.pk/wp-content/uploads/2020/07/home-security-system-copy.jpg",
+    image: "/images/security-system.png",
     bgColor: "bg-gradient-to-r from-stg-orange via-orange-500 to-orange-600",
     icon: Server,
   },
