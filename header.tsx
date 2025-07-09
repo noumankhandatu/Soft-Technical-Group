@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { Menu } from "lucide-react"
-import Link from "next/link"
-import { useState } from "react"
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -18,7 +18,7 @@ export default function Header() {
     { name: "Major Clients", href: "/major-clients" },
     { name: "Our Team", href: "/our-team" },
     { name: "Contact Us", href: "/contact" },
-  ]
+  ];
 
   return (
     <header className="w-full bg-white shadow-sm border-b">
@@ -27,8 +27,8 @@ export default function Header() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
-              <span>📧 info@stg.com.pk</span>
-              <span>📞 +92-21-34567890</span>
+              <span>📧 Info.softtg@gmail.com</span>
+              <span>📞 +92-321-5570471</span>
             </div>
             <div className="hidden md:flex items-center space-x-4">
               <span>Follow us:</span>
@@ -54,9 +54,7 @@ export default function Header() {
           {/* Logo and company name */}
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                STG
-              </div>
+              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">STG</div>
               <div className="ml-3">
                 <h1 className="text-2xl font-bold text-gray-900">Soft Technical Group</h1>
                 <p className="text-sm text-blue-600 font-medium">Developing the future...</p>
@@ -89,9 +87,7 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
                 <div className="flex items-center space-x-3 pb-4 border-b">
-                  <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
-                    STG
-                  </div>
+                  <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">STG</div>
                   <div>
                     <h2 className="font-bold text-gray-900">Soft Technical Group</h2>
                     <p className="text-sm text-blue-600">Developing the future...</p>
@@ -109,8 +105,8 @@ export default function Header() {
                 ))}
                 <div className="pt-4 border-t">
                   <div className="space-y-2 text-sm text-gray-600">
-                    <p>📧 info@stg.com.pk</p>
-                    <p>📞 +92-21-34567890</p>
+                    <p>📧 Info.softtg@gmail.com</p>
+                    <p>📞 +92-321-5570471</p>
                   </div>
                   <div className="flex space-x-4 mt-4">
                     <Link href="#" className="text-blue-600 hover:text-blue-800">
@@ -130,5 +126,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

@@ -8,7 +8,7 @@ import ContactMap from "../../components/contact-map";
 export const metadata: Metadata = {
   title: "Contact STG Pakistan | IT Support Gilgit-Baltistan | Soft Technical Group Office",
   description:
-    "Contact STG (Soft Technical Group) in Gilgit, Pakistan. Office: GITCO Gas Company, River View Road. Phone: +92 300 9332626. Email: info@stg.com.pk. 24/7 IT support available.",
+    "Contact STG (Soft Technical Group) in Gilgit, Pakistan. Office: GITCO Gas Company, River View Road. Phone: +923215570471. Email: Info.softtg@gmail.com. 24/7 IT support available.",
   keywords: [
     "contact STG Pakistan",
     "IT support Gilgit",

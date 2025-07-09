@@ -42,8 +42,8 @@ export default function SupportHero() {
               <Phone className="h-12 w-12 mx-auto mb-4 text-white" />
               <h3 className="text-xl font-bold mb-2">Emergency Hotline</h3>
               <p className="text-orange-100 mb-4">24/7 Emergency Support</p>
-              <a href="tel:+92-21-34567890" className="text-white font-semibold hover:text-orange-200">
-                +92-21-34567890
+              <a href="tel:+92-321-5570471" className="text-white font-semibold hover:text-orange-200">
+                +92-321-5570471
               </a>
             </div>
 
@@ -51,8 +51,8 @@ export default function SupportHero() {
               <Mail className="h-12 w-12 mx-auto mb-4 text-white" />
               <h3 className="text-xl font-bold mb-2">Email Support</h3>
               <p className="text-orange-100 mb-4">Technical Issues & Queries</p>
-              <a href="mailto:support@stg.com.pk" className="text-white font-semibold hover:text-orange-200">
-                support@stg.com.pk
+              <a href="mailto:Info.softtg@gmail.com" className="text-white font-semibold hover:text-orange-200">
+                Info.softtg@gmail.com
               </a>
             </div>
 

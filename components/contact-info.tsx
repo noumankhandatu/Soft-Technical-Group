@@ -10,12 +10,12 @@ export default function ContactInfo() {
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: ["+92 300 9332626", "+92 300 9332626", "Landline: XXX-XXXXXXX"],
+      details: ["+923215570471", "+923215570471", "Landline: XXX-XXXXXXX"],
     },
     {
       icon: Mail,
       title: "Email Address",
-      details: ["info@stg.com.pk", "support@stg.com.pk", "sales@stg.com.pk"],
+      details: ["Info.softtg@gmail.com", "Info.softtg@gmail.com", "sales@stg.com.pk"],
     },
     {
       icon: Clock,

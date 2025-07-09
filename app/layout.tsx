@@ -168,7 +168,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               contactPoint: [
                 {
                   "@type": "ContactPoint",
-                  telephone: "+92 300 9332626",
+                  telephone: "+923215570471",
                   contactType: "customer service",
                   availableLanguage: ["English", "Urdu"],
                   hoursAvailable: {
@@ -180,13 +180,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 },
                 {
                   "@type": "ContactPoint",
-                  telephone: "+92 300 9332626",
+                  telephone: "+923215570471",
                   contactType: "technical support",
                   availableLanguage: ["English", "Urdu"],
                   hoursAvailable: "24/7",
                 },
               ],
-              email: "info@stg.com.pk",
+              email: "Info.softtg@gmail.com",
               sameAs: ["https://www.facebook.com/STGPakistan", "https://www.linkedin.com/company/stg-pakistan", "https://twitter.com/STGPakistan"],
               areaServed: {
                 "@type": "State",
@@ -271,8 +271,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@id": "https://stg.com.pk/#organization",
               name: "Soft Technical Group (STG)",
               image: "https://stg.com.pk/images/stg-office.jpg",
-              telephone: "+92 300 9332626",
-              email: "info@stg.com.pk",
+              telephone: "+923215570471",
+              email: "Info.softtg@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Office #1, First Floor, GITCO Gas Company, Near City Hospital, River View Road",

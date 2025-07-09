@@ -169,21 +169,18 @@ const getUserEmailTemplate = (firstName: string, lastName: string) => `
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📞</div>
-                    +92 300 9332626 | +92 300 9332626
+                    +923215570471 
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">✉️</div>
-                    info@stg.com.pk | support@stg.com.pk
+                    Info.softtg@gmail.com
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">🕒</div>
                     Mon-Fri: 9:00 AM - 6:00 PM | Sat: 9:00 AM - 2:00 PM
                 </div>
             </div>
-            
-            <div style="text-align: center;">
-                <a href="https://stg.com.pk" class="btn">Visit Our Website</a>
-            </div>
+          
         </div>
         
         <div class="footer">
@@ -393,9 +390,7 @@ const getAdminEmailTemplate = (formData: any) => `
 },%0D%0A%0D%0AThank you for contacting Soft Technical Group..." class="btn">
                     📧 Reply to Client
                 </a>
-                <a href="tel:${formData.email}" class="btn">
-                    📞 Call Client
-                </a>
+               
             </div>
         </div>
         
@@ -430,7 +425,7 @@ export async function POST(request: NextRequest) {
     const userMailOptions = {
       from: {
         name: "Soft Technical Group",
-        address: process.env.SMTP_USER || "info@stg.com.pk",
+        address: process.env.SMTP_USER || "Info.softtg@gmail.com",
       },
       to: email,
       subject: "✅ Thank You for Contacting STG - We'll Be In Touch Soon!",
@@ -441,9 +436,9 @@ export async function POST(request: NextRequest) {
     const adminMailOptions = {
       from: {
         name: "STG Website Contact Form",
-        address: process.env.SMTP_USER || "info@stg.com.pk",
+        address: process.env.SMTP_USER || "Info.softtg@gmail.com",
       },
-      to: process.env.ADMIN_EMAIL || process.env.SMTP_USER || "info@stg.com.pk",
+      to: process.env.ADMIN_EMAIL || process.env.SMTP_USER || "Info.softtg@gmail.com",
       subject: `🔔 New Contact Form Submission from ${firstName} ${lastName} (${city})`,
       html: getAdminEmailTemplate({ firstName, lastName, email, city, message }),
     };

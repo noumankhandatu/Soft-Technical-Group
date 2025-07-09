@@ -138,7 +138,7 @@ export default function SupportContent() {
 
               <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 <a
-                  href="tel:+92-21-34567890"
+                  href="tel:+92-321-5570471"
                   className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-colors duration-300 flex items-center justify-center"
                 >
                   <Phone className="h-6 w-6 mr-3" />
@@ -172,9 +172,9 @@ export default function SupportContent() {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Phone Support</h3>
                 <div className="space-y-2 text-gray-600">
                   <p>General Support:</p>
-                  <p className="font-semibold text-stg-orange">+92-21-34567890</p>
+                  <p className="font-semibold text-stg-orange">+92-321-5570471</p>
                   <p>Emergency Hotline:</p>
-                  <p className="font-semibold text-red-600">+92-21-34567890</p>
+                  <p className="font-semibold text-red-600">+92-321-5570471</p>
                 </div>
               </div>
 
@@ -183,7 +183,7 @@ export default function SupportContent() {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Email Support</h3>
                 <div className="space-y-2 text-gray-600">
                   <p>Technical Support:</p>
-                  <p className="font-semibold text-stg-orange">support@stg.com.pk</p>
+                  <p className="font-semibold text-stg-orange">Info.softtg@gmail.com</p>
                   <p>Emergency Issues:</p>
                   <p className="font-semibold text-red-600">emergency@stg.com.pk</p>
                 </div>

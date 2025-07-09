@@ -82,7 +82,7 @@ export default function PrivacyContent() {
       title: "Contact Information",
       content: [
         "If you have questions about this privacy policy or our data practices, please contact us:",
-        "Email: info@stg.com.pk",
+        "Email: Info.softtg@gmail.com",
         "Address: Office #1, First Floor, GITCO Gas Company, Near City Hospital, River View Road, Gilgit",
         "Phone: [Your phone number]",
       ],

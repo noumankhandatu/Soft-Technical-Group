@@ -146,14 +146,13 @@ export default function Footer() {
               <div className="flex items-center space-x-3 group scroll-animate stagger-2">
                 <Phone className="h-5 w-5 text-stg-orange flex-shrink-0 group-hover:animate-bounce" />
                 <div className="text-gray-300 text-sm">
-                  <p>+92-21-34567890</p>
+                  <p>+92-321-5570471</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3 group scroll-animate stagger-3">
                 <Mail className="h-5 w-5 text-stg-orange flex-shrink-0 group-hover:animate-bounce" />
                 <div className="text-gray-300 text-sm">
-                  <p>info@stg.com.pk</p>
-                  <p>support@stg.com.pk</p>
+                  <p>Info.softtg@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 group scroll-animate stagger-4">
