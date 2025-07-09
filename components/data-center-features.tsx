@@ -18,7 +18,7 @@ import {
   Cpu,
   Settings,
   Wrench,
-} from "lucide-react"
+} from "lucide-react";
 
 export default function DataCenterFeatures() {
   const featureCategories = [
@@ -56,25 +56,25 @@ export default function DataCenterFeatures() {
         { icon: Wifi, name: "Communications Infrastructure", description: "Network connectivity solutions" },
       ],
     },
-    {
-      title: "Consulting & Security",
-      icon: Lock,
-      features: [
-        { icon: Lock, name: "Data Centre Consulting", description: "Expert advisory services" },
-        { icon: Shield, name: "Data Centre Security", description: "Comprehensive security solutions" },
-      ],
-    },
-    {
-      title: "Electrical Systems",
-      icon: Zap,
-      features: [
-        { icon: Zap, name: "Electrical Designing", description: "Professional electrical design" },
-        { icon: Settings, name: "Electrical Load Management", description: "Power distribution optimization" },
-        { icon: Cpu, name: "Earthing of Electrical Equipment", description: "Equipment grounding" },
-        { icon: Wrench, name: "Preventative Maintenance", description: "Proactive maintenance services" },
-      ],
-    },
-  ]
+    // {
+    //   title: "Consulting & Security",
+    //   icon: Lock,
+    //   features: [
+    //     { icon: Lock, name: "Data Centre Consulting", description: "Expert advisory services" },
+    //     { icon: Shield, name: "Data Centre Security", description: "Comprehensive security solutions" },
+    //   ],
+    // },
+    // {
+    //   title: "Electrical Systems",
+    //   icon: Zap,
+    //   features: [
+    //     { icon: Zap, name: "Electrical Designing", description: "Professional electrical design" },
+    //     { icon: Settings, name: "Electrical Load Management", description: "Power distribution optimization" },
+    //     { icon: Cpu, name: "Earthing of Electrical Equipment", description: "Equipment grounding" },
+    //     { icon: Wrench, name: "Preventative Maintenance", description: "Proactive maintenance services" },
+    //   ],
+    // },
+  ];
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-white">
@@ -86,11 +86,7 @@ export default function DataCenterFeatures() {
 
         <div className="space-y-16">
           {featureCategories.map((category, categoryIndex) => (
-            <div
-              key={categoryIndex}
-              className="animate-fade-in-up"
-              style={{ animationDelay: `${categoryIndex * 200}ms` }}
-            >
+            <div key={categoryIndex} className="animate-fade-in-up" style={{ animationDelay: `${categoryIndex * 200}ms` }}>
               <div className="text-center mb-12">
                 <div className="flex justify-center mb-4">
                   <div className="w-16 h-16 bg-stg-orange rounded-full flex items-center justify-center">
@@ -125,5 +121,5 @@ export default function DataCenterFeatures() {
         </div>
       </div>
     </section>
-  )
+  );
 }
