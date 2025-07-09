@@ -3,45 +3,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Building2, Shield, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const slides = [
-  {
-    id: 1,
-    title: "Trusted by Government",
-    subtitle: "Leading Departments Choose STG",
-    description: "Serving critical government infrastructure across Gilgit-Baltistan with excellence",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-600 to-stg-orange",
-    icon: Building2,
-  },
-  {
-    id: 2,
-    title: "Security & Trust",
-    subtitle: "Mission-Critical Operations",
-    description: "Trusted partner for law enforcement and security department IT infrastructure",
-    image: "https://stg.com.pk/wp-content/uploads/2025/04/8.jpg",
-    bgColor: "bg-gradient-to-r from-orange-600 via-stg-orange to-orange-700",
-    icon: Shield,
-  },
-  {
-    id: 3,
-    title: "Educational Excellence",
-    subtitle: "Academic Institution Partner",
-    description: "Supporting educational institutions with modern IT infrastructure and solutions",
-    image: "/images/security-system.png",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-500 to-orange-600",
-    icon: Users,
-  },
-  {
-    id: 4,
-    title: "Award-Winning Service",
-    subtitle: "Recognized Excellence",
-    description: "Consistently delivering exceptional results that exceed client expectations",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-orange-700 via-stg-orange to-orange-500",
-    icon: Award,
-  },
-];
+import { slides } from "@/raw/data";
 
 export default function MajorClientsHero() {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,47 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Users, Award, Target, Heart } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const slides = [
-  {
-    id: 1,
-    title: "Our Team",
-    subtitle: "Our Greatest Asset",
-    description: "Experienced engineers, developers, IT specialists, and project managers working together",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-600 to-stg-orange",
-    icon: Users,
-  },
-  {
-    id: 2,
-    title: "Expert Professionals",
-    subtitle: "Precision & Professionalism",
-    description: "Every project executed with deep understanding of modern IT environments",
-    image: "https://stg.com.pk/wp-content/uploads/2025/04/8.jpg",
-    bgColor: "bg-gradient-to-r from-orange-600 via-stg-orange to-orange-700",
-    icon: Award,
-  },
-  {
-    id: 3,
-    title: "Collaborative Spirit",
-    subtitle: "Working Hand-in-Hand",
-    description: "From planning to implementation and support, we partner with our clients",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-500 to-orange-600",
-    icon: Target,
-  },
-  {
-    id: 4,
-    title: "Your Success",
-    subtitle: "Our Mission",
-    description: "Delivering innovative, reliable, and impactful technology solutions",
-    image: "/images/security-system.png",
-    bgColor: "bg-gradient-to-r from-orange-700 via-stg-orange to-orange-500",
-    icon: Heart,
-  },
-];
+import { slides } from "@/raw/data";
 
 export default function TeamHero() {
   const [currentSlide, setCurrentSlide] = useState(0);

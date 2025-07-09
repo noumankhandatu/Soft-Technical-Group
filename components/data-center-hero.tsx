@@ -3,45 +3,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Server, Building2, Zap, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const slides = [
-  {
-    id: 1,
-    title: "Data Center Excellence",
-    subtitle: "Leading Data Center Solutions in Gilgit-Baltistan",
-    description: "The only service-based company in the region focusing on automation systems and standard data centers",
-    image: "https://stg.com.pk/wp-content/uploads/2025/04/8.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-600 to-stg-orange",
-    icon: Server,
-  },
-  {
-    id: 2,
-    title: "3 Tier Data Centers",
-    subtitle: "Government Infrastructure Excellence",
-    description: "Successfully established three-tier data centers for critical government operations",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-orange-600 via-stg-orange to-orange-700",
-    icon: Building2,
-  },
-  {
-    id: 3,
-    title: "Green Energy Solutions",
-    subtitle: "Sustainable & Energy Efficient",
-    description: "Pioneering environmentally conscious data center design and implementation",
-    image: "https://stg.com.pk/wp-content/uploads/2025/04/8.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-500 to-orange-600",
-    icon: Zap,
-  },
-  {
-    id: 4,
-    title: "Complete Security",
-    subtitle: "Advanced Protection Systems",
-    description: "Comprehensive security solutions including fire protection and access control",
-    image: "/images/security-system.png",
-    bgColor: "bg-gradient-to-r from-orange-700 via-stg-orange to-orange-500",
-    icon: Shield,
-  },
-];
+import { slides } from "@/raw/data";
 
 export default function DataCenterHero() {
   const [currentSlide, setCurrentSlide] = useState(0);

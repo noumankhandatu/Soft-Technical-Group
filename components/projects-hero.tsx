@@ -1,38 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Building2, Server, Shield } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const slides = [
-  {
-    id: 1,
-    title: "4 Tier Data Centers",
-    subtitle: "Successfully Established in Gilgit-Baltistan",
-    description: "Leading the digital transformation with state-of-the-art data center infrastructure",
-    image: "https://stg.com.pk/wp-content/uploads/2025/04/8.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-600 to-stg-orange",
-    icon: Building2,
-  },
-  {
-    id: 2,
-    title: "Government Solutions",
-    subtitle: "Trusted Partner for Public Sector",
-    description: "Delivering critical IT infrastructure for government departments across the region",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-orange-600 via-stg-orange to-orange-700",
-    icon: Shield,
-  },
-  {
-    id: 3,
-    title: "SAN & Server Expertise",
-    subtitle: "Customization & High-End Solutions",
-    description: "Specialized in Storage Area Networks and enterprise server customization",
-    image: "/images/security-system.png",
-    bgColor: "bg-gradient-to-r from-stg-orange via-orange-500 to-orange-600",
-    icon: Server,
-  },
-];
+import { slides } from "@/raw/data";
 
 export default function ProjectsHero() {
   const [currentSlide, setCurrentSlide] = useState(0);

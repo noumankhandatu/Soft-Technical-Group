@@ -3,37 +3,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const slides = [
-  {
-    id: 1,
-    title: "IT Solutions & Services",
-    description: "Comprehensive IT services for Government, semi-Government and Private organizations",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-stg-orange to-orange-600",
-  },
-  {
-    id: 2,
-    title: "Data Center Installation",
-    description: "Professional data center setup and server customization services",
-    image: "https://stg.com.pk/wp-content/uploads/2025/04/8.jpg",
-    bgColor: "bg-gradient-to-r from-orange-600 to-stg-orange",
-  },
-  {
-    id: 3,
-    title: "Security Systems",
-    description: "State-of-the-art surveillance and security solutions for complete peace of mind",
-    image: "/images/security-system.png",
-    bgColor: "bg-gradient-to-r from-stg-orange/90 to-orange-700/90",
-  },
-  {
-    id: 4,
-    title: "Network Optimization",
-    description: "Helping customers optimize their network & systems for maximum productivity",
-    image: "https://stg.com.pk/wp-content/uploads/2020/04/IMG_0046-scaled.jpg",
-    bgColor: "bg-gradient-to-r from-orange-700/90 to-stg-orange/90",
-  },
-];
+import { slides } from "@/raw/data";
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
