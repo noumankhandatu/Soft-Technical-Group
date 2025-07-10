@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Header from "../header";
-import ServicesCarousel from "../../components/services-carousel";
 import ServicesContent from "../../components/services-content";
 import ServicesGrid from "../../components/services-grid";
 import WhySTG from "../../components/why-stg";

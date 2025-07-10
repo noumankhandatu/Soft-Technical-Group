@@ -84,7 +84,7 @@ export default function AboutSection() {
           <div className="scroll-animate-right">
             <div className="relative group">
               <img
-                src="https://stg.com.pk/wp-content/uploads/slider/cache/5a271cfdd951118524666f019cb88059/11.jpg"
+                src="/images/1.jpg"
                 alt="Soft Technical Group Office"
                 className="w-full h-[600px] object-cover rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-105"
               />

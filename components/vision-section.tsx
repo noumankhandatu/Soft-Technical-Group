@@ -51,7 +51,7 @@ export default function VisionSection() {
           <div className="animate-fade-in-left">
             <div className="relative">
               <img
-                src="https://stg.com.pk/wp-content/uploads/slider/cache/b73a73b7e0500ae489d4db7f86d14cf9/8.jpg"
+                src="/images/it-services.jpg"
                 alt="STG Vision - Future Technology"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />

@@ -80,11 +80,7 @@ export default function MissionSection() {
           {/* Right Column - Image */}
           <div className="animate-fade-in-right">
             <div className="relative">
-              <img
-                src="https://stg.com.pk/wp-content/uploads/slider/cache/fe8adccc4f49d50483fad7d32efba9a4/3.jpg"
-                alt="STG Mission - Quality Service"
-                className="w-full h-[500px] object-cover rounded-lg shadow-lg"
-              />
+              <img src="/images/3.jpg" alt="STG Mission - Quality Service" className="w-full h-[500px] object-cover rounded-lg shadow-lg" />
               <div className="absolute inset-0 bg-gradient-to-t from-stg-orange/30 to-transparent rounded-lg"></div>
 
               {/* Mission Values Overlay */}
