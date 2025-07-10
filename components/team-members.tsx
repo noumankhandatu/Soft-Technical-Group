@@ -9,7 +9,7 @@ export default function TeamMembers() {
       position: "Managing Director",
       description: "Leading STG with strategic vision and extensive experience in IT infrastructure and business development.",
       icon: User,
-      image: "/team/a.jpg",
+      image: "/team/avatar-design.png",
       expertise: ["Strategic Planning", "Business Development", "IT Infrastructure", "Team Leadership"],
       experience: "5+ Years",
     },
@@ -19,7 +19,7 @@ export default function TeamMembers() {
       position: "Manager Finance",
       description: "Managing financial operations and ensuring sound fiscal management across all STG projects and initiatives.",
       icon: DollarSign,
-      image: "/team/b.png",
+      image: "/team/avatar-design.png",
       expertise: ["Financial Management", "Budget Planning", "Cost Analysis", "Project Finance"],
       experience: "4+ Years",
     },
@@ -29,7 +29,7 @@ export default function TeamMembers() {
       position: "Software Engineer",
       description: "Developing innovative software solutions and custom applications to meet diverse client requirements.",
       icon: Code,
-      image: "/team/c.jpg",
+      image: "/team/avatar-design.png",
       expertise: ["Software Development", "Web Applications", "Database Design", "System Integration"],
       experience: "8+ Years",
     },
@@ -39,7 +39,7 @@ export default function TeamMembers() {
       position: "Electrician",
       description: "Ensuring reliable electrical systems and power infrastructure for all data center and IT installations.",
       icon: Zap,
-      image: "/team/d.jpg",
+      image: "/team/avatar-design.png",
       expertise: ["Electrical Systems", "Power Distribution", "Equipment Installation", "Maintenance"],
       experience: "4+ Years",
     },
@@ -49,7 +49,7 @@ export default function TeamMembers() {
       position: "Network Technical",
       description: "Designing and implementing robust network solutions and ensuring optimal connectivity and performance.",
       icon: Network,
-      image: "/team/e.jpg",
+      image: "/team/avatar-design.png",
       expertise: ["Network Design", "System Administration", "Technical Support", "Infrastructure"],
       experience: "7+ Years",
     },
@@ -75,7 +75,7 @@ export default function TeamMembers() {
                 <img
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute top-4 left-4">
@@ -109,11 +109,11 @@ export default function TeamMembers() {
                 </div>
 
                 {/* Contact Button */}
-                <Link href={"/contact"}>
+                {/* <Link href={"/contact"}>
                   <button className="w-full bg-stg-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-300 group-hover:transform group-hover:-translate-y-1">
                     Connect with {member.name.split(" ")[0]}
                   </button>
-                </Link>
+                </Link> */}
               </div>
             </div>
           ))}

@@ -63,7 +63,7 @@ export default function Header() {
             </div>
           </div> */}
           <Link href={"/"}>
-            <img src="/newlogo.png" alt="" className="h-[60px] lg:h-[88px]" />
+            <img src="/newlogo.png" alt="" className="h-[60px] lg:h-[68px]" />
           </Link>
 
           {/* Desktop Navigation */}
